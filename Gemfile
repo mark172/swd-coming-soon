@@ -38,6 +38,11 @@ gem 'jbuilder', '~> 2.5'
 # Bootstrap
 gem "twitter-bootstrap-rails"
 
+# Fontawesome
+gem "font-awesome-rails"
+# Ionicons
+gem "font-ionicons-rails", git: 'https://github.com/ricardoemerson/font-ionicons-rails.git'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

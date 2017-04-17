@@ -1,442 +1,305 @@
+<div id="preloader">
+  <div id="loading-animation">&nbsp;</div>
+</div>
 
-  <div class="site">
-    <div class="site-loader _multi-circle-line">
-      <div class="site-loader-spinner"></div>
-    </div> <!-- .site-loader -->
+<video id="video_background" class="video_bg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+  <source src="demo/video/video.mp4" type="video/mp4">
+  <source src="demo/video/video.ogv" type="video/ogg">
+  <source src="demo/video/video.webm" type="video/webm">
+</video>
 
-    <div class="site-bg">
-      <div class="site-bg-img"></div>
-      <div class="site-bg-video"></div>
-      <div class="site-bg-overlay"></div>
-      <div class="site-bg-effect layer" data-depth=".30"></div> <!-- parallax data, try edit to other number :) -->
-      <canvas class="site-bg-canvas layer" data-depth=".30"></canvas> <!-- parallax data, try edit to other number :) -->
-      <div class="site-bg-border"></div>
-    </div> <!-- .site-bg -->
+<header class="site-header">
+  <nav id="navigation" class="navigation site-nav navbar">
+    <div class="navbar-header onstart animated" data-animation="fadeInDown" data-animation-delay="1200">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-controls="navbar">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">
+        <!-- Logo -->
+        <img src="/assets/logo.png" alt="" />
+      </a>
+    </div>
+    <div id="main-nav" class="navbar-collapse collapse">
+      <ul id="menu" class="nav navbar-nav navbar-right onstart animated" data-animation="fadeInDown" data-animation-delay="800">
+        <li class="active" data-menuanchor="firstPage"><a href="#firstPage" class="active">Home</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Subscribe</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">About</a></li>
+        <li data-menuanchor="4thPage"><a href="#4thPage">Services</a></li>
+        <li data-menuanchor="lastPage"><a href="#lastPage">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-    <div class="site-canvas">
-      <header class="site-header">
-        <div class="container">
-          <div class="site-header-header">
-            <div class="site-header-brand">
-              <a href="#">
-                <img class="site-header-logo" src="assets/img/site-header-logo.png" alt="">
-                <img class="site-header-logo-invert" src="assets/img/site-header-logo-invert.png" alt="">
-              </a>
+<div id="fullpage">
+          
+  <!-- Home Section -->
+  <div class="section home active" id="section0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <!-- Slide Content -->
+          <div class="slide-content">
+            <div class="flexslider textslider onstart animated" data-animation="fadeInUp" data-animation-delay="800">
+              <ul class="slides">
+                <li>
+                  <h1 class="rotate uppercase">We're <span class="font-normal">Creative<br>Studio</span> from Sydney</h1>
+                </li>
+                <li>
+                  <h1 class="rotate uppercase"><span class="font-normal">Awesome</span> Style in<br>every <span class="font-normal">single way</span></h1>
+                </li>
+                <li>
+                  <h1 class="rotate uppercase">Branding & <span class="font-normal">creative<br>digital</span> solution</h1>
+                </li>
+              </ul>
             </div>
-            <a class="primary-nav-toggle" href="#">
-              <i class="fa fa-navicon"></i>
-            </a>
-          </div>
-          <div class="site-header-main">
-            <nav class="primary-nav">
-              <div class="primary-menu-container">
-                <ul class="primary-menu">
-                  <li class="primary-menu-item is-active" data-section="#home">
-                    <a href="#" data-hover="Home"><span>Home</span></a> <!-- set `data-hover` same as the link text -->
-                  </li> <!-- add `is-active` class for the main section, set `data-section` to be the section id -->
-                  <li class="primary-menu-item" data-section="#about">
-                    <a href="#" data-hover="About"><span>About</span></a>
-                  </li>
-                  <li class="primary-menu-item" data-section="#service">
-                    <a href="#" data-hover="Service"><span>Service</span></a>
-                  </li>
-                  <li class="primary-menu-item" data-section="#contact">
-                    <a href="#" data-hover="Contact"><span>Contact</span></a>
-                  </li>
-                  <li class="primary-menu-item" data-section="#social">
-                    <a href="#"><i class="fa fa-share-alt"></i></a>
-                  </li>
-                  <li class="primary-menu-item audio-toggle">
-                    <a href="#"><i class="fa fa-volume-up"></i></a>
-                  </li> <!-- .audio-toggle -->
-                </ul>
-              </div>
-            </nav>
+            <p class="lead onstart animated" data-animation="fadeInUp" data-animation-delay="1000">Our Website Is Coming Soon</p>
+            <a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="2">Subscribe</a>
+            <a href="#" class="default-button bt-transparent go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="3">Learn more <i class="fa fa-angle-down"></i></a>
           </div>
         </div>
-      </header> <!-- .site-header -->
-      <main class="site-main">
-        <div id="nav" class="section">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- for `> md` screen, control with `#nav` id -->
-
-        <div id="social" class="section">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div class="social-menu-container">
-                        <ul class="social-menu">
-                          <li class="social-item">
-                            <a href="https://www.facebook.com/" target="_blank">
-                              <i class="fa fa-facebook-square"></i>
-                              <span>Facebook</span>
-                            </a> <!-- social link -->
-                          </li>
-                          <li class="social-item">
-                            <a href="https://twitter.com/" target="_blank">
-                              <i class="fa fa-twitter-square"></i>
-                              <span>Twitter</span>
-                            </a>
-                          </li>
-                          <li class="social-item">
-                            <a href="https://plus.google.com/" target="_blank">
-                              <i class="fa fa-google-plus-square"></i>
-                              <span>Google</span>
-                            </a>
-                          </li>
-                          <li class="social-item">
-                            <a href="https://www.youtube.com/" target="_blank">
-                              <i class="fa fa-youtube-square"></i>
-                              <span>Youtube</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- #social -->
-
-        <div id="home" class="section is-active">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div id="countdown_dashboard" class="countdown">
-                        <div class="dash-primary">
-                          <div class="dash days_dash">
-                            <div class="digit">0</div> <!-- remove this line for double figures -->
-                            <div class="digit">0</div>
-                            <div class="digit">0</div>
-                            <span class="dash_title">DAYs</span>
-                          </div>
-                        </div>
-                        <div class="dash-secondary">
-                          <div class="dash hours_dash">
-                            <span class="dash_title">Hours</span>
-                            <div class="digit">0</div>
-                            <div class="digit">0</div>
-                          </div>
-
-                          <div class="dash minutes_dash">
-                            <span class="dash_title">Minutes</span>
-                            <div class="digit">0</div>
-                            <div class="digit">0</div>
-                          </div>
-
-                          <div class="dash seconds_dash">
-                            <span class="dash_title">Seconds</span>
-                            <div class="digit">0</div>
-                            <div class="digit">0</div>
-                          </div>
-                        </div>
-                      </div> <!-- .countdown -->
-                      <p>
-                        We are currently working on a new website. Stay tuned for more information.
-                        <br>
-                        Subscribe to our newsletter to stay updated on our progress.
-                      </p>
-                      <form id="subscribeForm">
-                        <div class="subscribe-wrap">
-                          <a id="subscribeBtn" class="btn btn-default btn-subscribe">
-                            <i class="fa fa-bell-o animated infinite swing"></i> <!-- bell animation class `animated infinite swing` -->
-                            <span>Notify Me</span>
-                          </a>
-                          <input id="subscribeEmail" class="form-control" type="email" name="email" placeholder="Your Email Address">
-                          <button id="subscribeSubmit" class="btn" type="submit"><i class="fa fa-envelope-o"></i></button>
-                        </div>
-                        <div class="form-notify"></div>
-                      </form> <!-- #subscribeForm -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="about" class="section">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div class="section-heading">
-                        <h2 class="section-title">Who We Are?</h2>
-                        <p class="section-subtitle">Marketing • Design • Multipurpose</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="col-inner">
-                      <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in scelerisque nisi, a convallis nibh. Etiam posuere faucibus lectus, quis volutpat urna consequat et. Aenean rutrum dui in turpis feugiat, at facilisis dui laoreet. Nunc vestibulum nisi in dolor suscipit consectetur.</p>
-                      <p>Morbi pulvinar, magna vel sollicitudin porttitor, nulla nulla semper turpis, quis egestas nisl enim id ex. Nam eleifend mauris sit amet sem facilisis.</p>
-                      <a class="btn btn-default hidden-xs hidden-sm" href="#" data-section="#service">
-                        <span>Our Service</span>
-                      </a> <!-- button link to section, edit the `data-section` to be section id -->
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-2">
-                    <div class="col-inner">
-                      <div class="iconbox _left">
-                        <div class="iconbox-icon">
-                          <i class="icon-strategy"></i>
-                        </div>
-                        <div class="iconbox-heading">
-                          <h4>Experienced Team</h4>
-                        </div>
-                        <div class="iconbox-content">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in scelerisque nisi, a convallis nibh. Etiam posuere faucibus lectus.</p>
-                        </div>
-                      </div> <!-- .iconbox -->
-
-                      <div class="iconbox _left">
-                        <div class="iconbox-icon">
-                          <i class="icon-tools"></i>
-                        </div>
-                        <div class="iconbox-heading">
-                          <h4>Talented Designers</h4>
-                        </div>
-                        <div class="iconbox-content">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in scelerisque nisi, a convallis nibh. Etiam posuere faucibus lectus.</p>
-                        </div>
-                      </div> <!-- .iconbox -->
-                      <a class="btn btn-default hidden-md hidden-lg" href="#" data-section="#service">
-                        <span>Our Service</span>
-                      </a> <!-- button link to section, edit the `data-section` to be section id -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="service" class="section">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div class="section-heading">
-                        <h2 class="section-title">What We Do?</h2>
-                        <p class="section-subtitle">Marketing • Design • Multipurpose</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div id="serviceCarousel" class="owl-carousel">
-                        <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <i class="icon-mobile"></i>
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>Responsive Design</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in scelerisque nisi, a convallis nibh. Etiam posuere faucibus lectus.</p>
-                          </div>
-                        </div> <!-- .iconbox -->
-
-                        <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <i class="icon-beaker"></i>
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>Cool Effect</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in scelerisque nisi, a convallis nibh. Etiam posuere faucibus lectus.</p>
-                          </div>
-                        </div> <!-- .iconbox -->
-
-                        <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <i class="icon-chat"></i>
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>Fast Support</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in scelerisque nisi, a convallis nibh. Etiam posuere faucibus lectus.</p>
-                          </div>
-                        </div> <!-- .iconbox -->
-
-                        <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <i class="icon-gears"></i>
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>Easy To Use</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in scelerisque nisi, a convallis nibh. Etiam posuere faucibus lectus.</p>
-                          </div>
-                        </div> <!-- .iconbox -->
-
-                        <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <i class="icon-video"></i>
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>Video Background</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in scelerisque nisi, a convallis nibh. Etiam posuere faucibus lectus.</p>
-                          </div>
-                        </div> <!-- .iconbox -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- #service -->
-
-        <div id="contact" class="section">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div class="section-heading">
-                        <h2 class="section-title">Get In Touch</h2>
-                        <p class="section-subtitle">Marketing • Design • Multipurpose</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-md-5 m-t-30-sm-max">
-                    <div class="col-inner">
-                      <div class="iconbox _left">
-                        <div class="iconbox-icon">
-                          <i class="icon-tablet"></i>
-                        </div>
-                        <div class="iconbox-heading">
-                          <h4>Phone Number</h4>
-                        </div>
-                        <div class="iconbox-content">
-                          <p>
-                            (00) 123-4567890 (tel-1)
-                            <br>
-                            (00) 123-4567890 (tel-2)
-                          </p>
-                        </div>
-                      </div> <!-- .iconbox -->
-
-                      <div class="iconbox _left">
-                        <div class="iconbox-icon">
-                          <i class="icon-pencil"></i>
-                        </div>
-                        <div class="iconbox-heading">
-                          <h4>Email Address</h4>
-                        </div>
-                        <div class="iconbox-content">
-                          <p>
-                            email_1@example.com
-                            <br>
-                            email_2@example.com
-                          </p>
-                        </div>
-                      </div> <!-- .iconbox -->
-
-                      <div class="iconbox _left">
-                        <div class="iconbox-icon">
-                          <i class="icon-map-pin"></i>
-                        </div>
-                        <div class="iconbox-heading">
-                          <h4>Business address</h4>
-                        </div>
-                        <div class="iconbox-content">
-                          <p>
-                            631 Main Street Cottage,
-                            <br>
-                            Long Branch, P.O Box 55016
-                          </p>
-                        </div>
-                      </div> <!-- .iconbox -->
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-2">
-                    <div class="col-inner">
-                      <form class="_outline" id="contactForm" novalidate="novalidate">
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <div class="form-group required">
-                              <label class="form-label" for="contactName">Your name</label>
-                              <input class="form-control" id="contactName" type="text" name="name">
-                            </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="form-group required">
-                              <label class="form-label" for="contactEmail">Email address</label>
-                              <input class="form-control" id="contactEmail" type="text" name="email">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group required">
-                          <label class="form-label" for="contactMessage">Message</label>
-                          <textarea class="form-control" id="contactMessage" rows="4" name="message"></textarea>
-                        </div>
-                        <div class="btn-wrap">
-                          <button type="submit" class="btn btn-default btn-block">Send Message</button>
-                        </div>
-                        <div class="form-notify">Drop us a line to say hello :)</div>
-                      </form> <!-- contactForm -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main> <!-- .site-main -->
+      </div>
     </div>
   </div>
 
-  <script src="assets/js/vendor/jquery-1.11.3.min.js"></script>
-  <script src='assets/js/vendor/bootstrap.min.js'></script>
-  <script src='assets/js/vendor/plugin.js'></script>
-  <script src='assets/js/variable.js'></script>
-  <script src='assets/js/main.js'></script>
-  <script>
-  	$(".site-loader").hide()
-	</script>
+  <!-- Subscribe Section -->
+  <div class="section" id="section1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="section-header color-white">
+            <!-- Section Title -->
+            <h2 class="section-title animated" data-animation="fadeInUp">Subscribe To Our Newsletter</h2><!-- END TITLE -->
+            <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+          </div>  
+          <!-- Slide Content -->
+          <div class="slide-content">
+            <p class="animated" data-animation="fadeInUp" data-animation-delay="200">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <!-- Subscribe Form -->
+            <div class="form animated" data-animation="fadeInUp" data-animation-delay="400">
+              <div class="form-container">
+                <div class="page-section" id="signup">
+                  <form class="subscription-form mailchimp" method="post" id="mc-form">
+                    <input type="email" id="email" class="border-radius-22 no-bottom-margin" name="email" placeholder="Enter Your Email Address" />
+                    <button type="submit" id="subscribebtn" class="border-button no-bottom-margin">Subscribe</button>
+                  </form>
+                  <p class="error-message"></p>
+                  <p class="success-message"></p>
+                </div><!--end page section -->
+              </div><!-- end form container -->
+            </div><!-- end Subscribe Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- About Section -->
+  <div class="section" id="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="section-header">
+            <!-- Section Title -->
+            <h2 class="section-title animated" data-animation="fadeInUp">About Us</h2><!-- END TITLE -->
+            <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+          </div>  
+          <!-- Slide Content -->
+          <div class="slide-content animated" data-animation="fadeInUp" data-animation-delay="400">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae orci nec sapien posuere tincidunt ut sit amet magna. Ut a enim in orci feugiat fringilla id in ipsum. Integer condimentum viverra nunc vitae sodales. Nunc viverra iaculis bibendum. Pellentesque scelerisque eleifend diam at convallis. Duis quis justo pretium, sagittis nisi a, viverra ligula. Curabitur interdum augue elit, sit amet accumsan eros efficitur a. Integer venenatis ligula at lobortis lacinia.</p>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="features-list">
+                  
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="ion-ios-speedometer-outline"></i>
+                    </div>
+                    <div class="feature-text">
+                      <h3>Lightning Fast</h3>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="ion-ios-heart-outline"></i>
+                    </div>
+                    <div class="feature-text">
+                      <h3>You’re going to love it</h3>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="features-list">
+              
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="ion-ios-albums-outline"></i>
+                    </div>
+                    <div class="feature-text">
+                      <h3>Beautiful Animations</h3>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="ion-ios-timer-outline"></i>
+                    </div>
+                    <div class="feature-text">
+                      <h3>Huge Time Saver</h3>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Features Section -->
+  <div class="section" id="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="tour-header">
+            <!-- Section Title -->
+            <h2 class="section-title animated" data-animation="fadeInUp">Our Services</h2><!-- END TITLE -->
+            <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+          </div>  
+          <!-- Slide Content -->
+          <div class="slide-content">
+            <p class="animated" data-animation="fadeInUp" data-animation-delay="400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <!-- Service -->
+            <div class="col-md-4 service animated" data-animation="fadeInLeft" data-animation-delay="800">
+              <div class="service-icon">
+                <i class="ion-ios-book-outline"></i>
+              </div>
+              <h3>Well Documented</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+            
+            <!-- Service -->
+            <div class="col-md-4 service animated" data-animation="fadeInUp" data-animation-delay="600">
+              <div class="service-icon">
+                <i class="ion-ios-speedometer-outline"></i>
+              </div>
+              <h3>Fully Responsive</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+            
+            <!-- Service -->
+            <div class="col-md-4 service animated" data-animation="fadeInRight" data-animation-delay="800">
+              <div class="service-icon">
+                <i class="ion-ios-box-outline"></i>
+              </div>
+              <h3>Amazing Features</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <!--
-  <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-  </script>
-  -->
+  <!-- Contact Section -->
+  <div class="section" id="section4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="section-header">
+            <!-- Section Title -->
+            <h2 class="section-title animated" data-animation="fadeInUp">Do You Have a Question ?</h2><!-- END TITLE -->
+            <div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+          </div>  
+          <!-- Slide Content -->
+          <div class="slide-content">
+            <p class="animated" data-animation="fadeInUp" data-animation-delay="400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="contact-form animated" data-animation="fadeInUp" data-animation-delay="600">
+              <form class="mb-0" id="cf" name="cf" action="include/sendemail.php" method="post">
+                <div class="row">
 
-</body>
-</html>
+                  <div class="form-process"></div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      <input type="text" id="cf-name" name="cf-name" placeholder="Enter your name" class="required">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      <input type="email" id="cf-email" name="cf-email" placeholder="Enter your email address" class="required">
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <input type="text" id="cf-subject" name="cf-subject" placeholder="Subject (Optional)" class="light">
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-20">
+                    <div class="form-group">
+                      <textarea name="cf-message" id="cf-message" placeholder="Here goes your message" class="required" rows="7"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12 hidden">
+                    <input type="text" id="cf-botcheck" name="cf-botcheck" value="" />
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button class="border-button" type="submit" id="cf-submit" name="cf-submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+              <div class="response-message contact-form-result text-center pt-10"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</div>
+
+<nav class="socials-icons">
+  <ul>
+    <li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="800"><a href="#"><i class="ion-social-facebook"></i></a></li>
+    <li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="950"><a href="#"><i class="ion-social-twitter"></i></a></li>
+    <li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="1100"><a href="#"><i class="ion-social-googleplus"></i></a></li>
+    <li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="1250"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+    <li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="1400"><a href="#"><i class="ion-social-pinterest"></i></a></li>
+    <li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="1550"><a href="#"><i class="ion-social-dribbble-outline"></i></a></li>
+  </ul> 
+</nav>
+
+<footer class="site-footer onstart animated" data-animation="fadeInUp" data-animation-delay="800">
+  <p class="copyright">© 2015 Oli - All Rights Reserved</p>
+</footer>
+
+<div class="viewport-border">
+  <div class="vb-l"></div>
+  <div class="vb-r"></div>
+  <div class="vb-t"></div>
+  <div class="vb-b"></div>
+</div>
+
+<!-- Overlay -->
+<div class="overlay">
+  <div class="gradient-overlay background-blue-dark opacity-40"></div>
+</div>
+
+<!-- JS -->
+<!-- <script type="text/javascript" src="/assets/plugins.js"></script>
+
+<script type="text/javascript" src="/assets/main.js"></script> -->
+<script>
+  $("#preloader").hide()
+</script>
