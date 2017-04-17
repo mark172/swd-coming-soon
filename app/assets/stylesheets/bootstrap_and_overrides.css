@@ -4,3 +4,11 @@
   Static version of css will use Glyphicons sprites by default
   =require twitter-bootstrap-static/sprites
 */
+
+
+.navbar {
+    position: static;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}

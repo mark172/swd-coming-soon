@@ -324,7 +324,7 @@ Version: 1.5
 		init_ED_PageBackground();
 		init_ED_Layout();
 		init_ED_Plugins();
-		init_ED_ContactForm();
+		// init_ED_ContactForm();
 	});
 
 })(jQuery);
