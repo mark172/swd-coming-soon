@@ -16,4 +16,5 @@
 .navbar-brand>img {
     display: block;
     height: 90%;
+    margin-top: 3px;
 }
