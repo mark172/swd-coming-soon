@@ -41,6 +41,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Bootstrap
 gem "twitter-bootstrap-rails"
+# Simple Form
+gem 'simple_form'
 
 # Fontawesome
 gem "font-awesome-rails"
